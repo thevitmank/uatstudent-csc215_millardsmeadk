@@ -1,0 +1,52 @@
+//Game code: Making Pancakes
+
+<!--Saved by Quest 5.8.6836.13983-->
+<asl version="580">
+  <include ref="GamebookCore.aslx" />
+  <game name="Making Pancakes">
+    <gameid>4cc1ac00-dfc6-4182-95d8-1cfe35aa1d57</gameid>
+    <version>1.0</version>
+    <firstpublished>2022</firstpublished>
+    <author>Kevin Millard</author>
+    <description>Will you make the best pancakes, or get burned?</description>
+    <category>Simulation</category>
+  </game>
+  <object name="Page1">
+    <description>Good Morning! You're in charge of breakfast this morning, and your guest wants pancakes.</description>
+    <options type="stringdictionary">
+      <item>
+        <key>Page2</key>
+        <value>Pull out the ingredients</value>
+      </item>
+      <item>
+        <key>Page3</key>
+        <value>Tell your guest to go to IHOP</value>
+      </item>
+    </options>
+    <object name="player">
+      <inherit name="defaultplayer" />
+    </object>
+  </object>
+  <object name="Page2">
+    <description>You begin to prepare the pancakes, but don't remember how long they cook on each side...</description>
+	<options type="stringdictionary">
+      <item>
+        <key>Page4</key>
+        <value>Flip it in about 3-4 minutes</value>
+      </item>
+      <item>
+        <key>Page5</key>
+        <value>Flip it now!</value>
+      </item>
+    </options>
+  </object>
+  <object name="Page3">
+    <description>Now you've done it...your guest is upset and storms out because he/she is hangry. Game Over.</description>
+  </object>
+  <object name="Page4">
+    <description>Nice Flip! Once there done, you serve is up with all the dressings and youir guest it happy. Good work!</description>
+  </object>
+  <object name="Page5">
+    <description>What a mess! Not only did it get all over the kitchen stove, but a hot piece of batter hit your guest in the face! Game Over.</description>
+  </object>
+</asl>
