@@ -1,0 +1,35 @@
+//this is my first interactive program
+/*Interactive Demo
+Kevin Millard*/
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	std::string uin_str;
+	int usr_int;
+
+	cout << "Good Moring! You're Breakfast options are..." << endl;
+	cout << "1: Pancakes" << endl;
+	cout << "2: Waffles" << endl;
+	cout << "3: Green Eggs & Ham" << endl;
+	cin >> usr_int;
+
+	if (usr_int == 1) {
+		cout << "Great Choice! I'll tell the chef." << endl;
+	}
+	else if (usr_int == 2) {
+		cout << "A valid selection. I'll fire up the waffle maker at once." << endl;
+	}
+	else if (usr_int == 3) {
+		cout << "I'm not sure what kind of taste buds you have, but to each their own...I guess." << endl;
+	}
+
+
+
+	return 0;
+
+}
+
